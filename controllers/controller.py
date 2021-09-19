@@ -31,4 +31,4 @@ def play(name_1, choice_1, name_2, choice_2):
     game = Game(player_1, player_2)
     game.play_game()
     winner = game.winner
-    return render_template("result.html", title = "Results", winner = winner)
+    return render_template("result.html", title = "Results", winner = winner, name_1 = name_1, name_2 = name_2, choice_1 = choice_1, choice_2 = choice_2)
