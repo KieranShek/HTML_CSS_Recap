@@ -14,8 +14,8 @@ def welcome():
 
 @app.route('/play', methods=["GET", "POST"])
 def get_choices():
-        player_1 = Player(request.form["Player 1 Name"], request.form["Player 1 Choice"])
-        player_2 = Player(request.form["Player 2 Name"], request.form["Player 2 Choice"])
+        # player_1 = Player(request.form["Player 1 Name"], request.form["Player 1 Choice"])
+        # player_2 = Player(request.form["Player 2 Name"], request.form["Player 2 Choice"])
         choice_1 = request.form["Player 1 Choice"]
         choice_2 = request.form["Player 2 Choice"]
         player_1 = request.form["Player 1 Name"]
