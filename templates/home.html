@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{%  extends "base.html" %}
+{% block content %}
+
+<h2>Rock Paper Scissors</h2>
+
+<body>
+
+    <div>
+    <form action="/play" method ="POST" class="FORM">
+
+        <label for = "Player 1 Name">Player 1 Name:</label>
+        <textarea name="Player 1 Name" rows = "1" cols = "30" ></textarea>
+
+        <label for = "Player 1 Choice">Player 1 Choice:</label>
+        <select name="Player 1 Choice">
+            <option value=""></option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <br>
+        <br>
+        <label for = "Player 2 Name">Player 2 Name:</label>
+        <textarea name="Player 2 Name" rows = "1" cols = "30" ></textarea>
+
+        <label for = "Player 2 Choice">Player 2 Choice:</label>
+        <select name="Player 2 Choice">
+            <option value=""></option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+
+        <input type = "submit" value = "Submit">
+    </div>
+
+</body>
+{% endblock %}

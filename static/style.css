@@ -1,0 +1,14 @@
+.top_bar {
+    background-color: hotpink;
+    padding: 10px
+    }
+
+ul {list-style-type: none;}
+
+#overlay img { display: none; }
+
+#overlay.currently-loading img { 
+    display: block; 
+    width: 100%;
+    height: 100%;
+}
